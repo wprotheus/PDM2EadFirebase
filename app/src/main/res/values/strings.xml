@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">PDM2EadFirebase</string>
+    <string name="tv_title">Usando o Firebase</string>
+    <string name="btn_cadastro">CADASTRAR</string>
+    <string name="btn_visualizar">VISUALIZAR</string>
+    <string name="btn_home">HOME</string>
+    <string name="desc_logo">Logo Monte Olimpo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_logo">Logotipo do IFTO</string>
+    <string name="txt_title_cad">CADASTRADO DE DISCIPLINAS E NOTAS</string>
+    <string name="txt_name_object">Nome da disciplina:</string>
+    <string name="txt_object_grade">Nota obtida na disciplina:</string>
+    <string name="btn_cadastrar">CADASTRAR</string>
+    <string name="txt_object_view">Visualização de Disciplinas e Notas</string>
+    <string name="txt_desc_view_gradeObject">Visualiazação das disciplinas e suas notas</string>
+    <string name="title_activity_view_model_firebase">ViewModelFirebase</string>
+    <string name="tv_subject">DISCIPLINA</string>
+    <string name="tv_grade">NOTA</string>
+    <string name="desc_ilustracao">Imagem ilustrativa</string>
+    <string name="txt_name_disc">Nome da disciplina</string>
+    <string name="txt_grade_value">Nota obtida</string>
+    <string name="msg_erro">Erro ao gravar os dados!:(</string>
+    <string name="msg_certo">Dados gravados com sucesso!:)</string>
+</resources>

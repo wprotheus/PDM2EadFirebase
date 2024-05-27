@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="txt_title">#FFBF360C</color>
+    <color name="color_ted">#041C41</color>
+    <color name="bck_color">#e5ead9</color>
+    <color name="mojito_color">#DEE8E0</color>
+    <color name="bac_logo">#151936</color>
+</resources>

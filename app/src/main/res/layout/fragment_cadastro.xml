@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mojito_color"
+    tools:context=".ui.CadastroFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp">
+
+        <TextView
+            android:id="@+id/tvTituloCadastro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginEnd="26dp"
+            android:forceDarkAllowed="false"
+            android:orientation="horizontal"
+            android:text="@string/txt_title_cad"
+            android:textAlignment="center"
+            android:textColor="@color/txt_title"
+            android:textSize="26sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilNome"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:textAlignment="textStart"
+            app:layout_constraintBottom_toTopOf="@+id/tilNota"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTituloCadastro">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tietNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/txt_name_object"
+                android:inputType="text"
+                android:nextFocusUp="@id/btnCadastrar"
+                android:nextFocusDown="@id/tietNota"
+                android:textColor="@color/color_ted"
+                android:textSize="14.3sp"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilNota"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:textAlignment="textStart"
+            app:layout_constraintBottom_toTopOf="@+id/btnCadastrar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tilNome">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tietNota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789.,"
+                android:hint="@string/txt_object_grade"
+                android:inputType="number"
+                android:maxLength="5"
+                android:minLines="1"
+                android:nextFocusUp="@id/tietNome"
+                android:nextFocusDown="@id/btnCadastrar"
+                android:textColor="@color/color_ted"
+                android:textSize="14.3sp"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnCadastrar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="44dp"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:nextFocusUp="@id/tietNota"
+            android:nextFocusDown="@id/tietNome"
+            android:text="@string/btn_cadastrar"
+            android:textColor="@color/material_dynamic_primary10"
+            android:textColorLink="@android:color/holo_red_light"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:cornerRadius="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tilNota" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="2dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginRight="2dp"
+    android:background="@drawable/borda_verde_layout"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivIlustracao"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/borda_verde_layout"
+        android:contentDescription="@string/desc_ilustracao"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintHorizontal_bias="0.0"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/disciplinas" />
+
+    <TextView
+        android:id="@+id/tvSubject"
+        android:layout_width="161dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:letterSpacing="0.6"
+        android:text="@string/tv_subject"
+        android:textColor="@color/txt_title"
+        android:textColorLink="@android:color/holo_red_light"
+        android:textStyle="bold"
+        card_view:layout_constraintBottom_toTopOf="@+id/tvSubjectName"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintHorizontal_bias="0.011"
+        card_view:layout_constraintStart_toEndOf="@+id/ivIlustracao"
+        card_view:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvGrade"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:letterSpacing="0.6"
+        android:text="@string/tv_grade"
+        android:textAlignment="textStart"
+        android:textColor="@color/txt_title"
+        android:textColorLink="@android:color/holo_red_light"
+        android:textStyle="bold"
+        card_view:layout_constraintBottom_toTopOf="@+id/tvSubjectGrade"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintHorizontal_bias="0.093"
+        card_view:layout_constraintStart_toEndOf="@+id/ivIlustracao" />
+
+    <TextView
+        android:id="@+id/tvSubjectName"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/borda_preta_layout"
+        android:text="@string/txt_name_disc"
+        android:textAlignment="center"
+        android:textColor="@color/color_ted"
+        android:textColorLink="@android:color/holo_red_light"
+        android:textSize="17sp"
+        android:textStyle="bold|italic"
+        card_view:layout_constraintBottom_toTopOf="@+id/tvGrade"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintStart_toEndOf="@+id/ivIlustracao"
+        card_view:layout_constraintTop_toBottomOf="@+id/tvSubject" />
+
+    <TextView
+        android:id="@+id/tvSubjectGrade"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/borda_preta_layout"
+        android:text="@string/txt_grade_value"
+        android:textAlignment="center"
+        android:textColor="@color/color_ted"
+        android:textColorLink="@android:color/holo_red_light"
+        android:textSize="17sp"
+        android:textStyle="bold|italic"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintStart_toEndOf="@+id/ivIlustracao" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

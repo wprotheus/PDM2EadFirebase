@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="4dp"
+    android:background="@color/bck_color"
+    tools:context=".view.MainActivity"
+    tools:targetApi="s">
+
+    <ImageView
+        android:id="@+id/ivOlimpus"
+        android:layout_width="0dp"
+        android:layout_height="63dp"
+        android:adjustViewBounds="false"
+        android:contentDescription="@string/desc_logo"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/olympus"
+        tools:src="@drawable/olympus" />
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="@string/tv_title"
+        android:textAlignment="center"
+        android:textColor="@color/txt_title"
+        android:textColorLink="@android:color/holo_red_light"
+        android:textSize="35sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivOlimpus" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCadastro"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:text="@string/btn_cadastro"
+        android:textColor="@color/material_dynamic_primary20"
+        android:textColorLink="@android:color/holo_red_light"
+        android:textStyle="bold|italic"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnVisualizar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnHome"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnVisualizar"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:text="@string/btn_visualizar"
+        android:textColor="@color/material_dynamic_primary20"
+        android:textColorLink="@android:color/holo_red_light"
+        android:textStyle="bold|italic"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnCadastro"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnHome"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:text="@string/btn_home"
+        android:textColor="@color/material_dynamic_primary20"
+        android:textColorLink="@android:color/holo_red_light"
+        android:textStyle="bold|italic"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnCadastro"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo" />
+
+
+    <FrameLayout
+        android:id="@+id/flFragmentos"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCadastro">
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
